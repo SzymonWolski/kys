@@ -198,7 +198,7 @@ int main() {
     lista.wyświetlPoprzedni(ostatniElement);
     
     lista.wyczyść();
-    cout << "Lista po wyczyszczeniu: ";
+    cout << "Lista po wyczyszczeniu:: ";
     lista.wyświetl();
     
     return 0;
