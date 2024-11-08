@@ -9,52 +9,7 @@ struct Wezel {
     Wezel(int wartosc) : dane(wartosc), poprzedni(nullptr), nastepny(nullptr) {}
 };
 
-class ListaDwukierunkowa{
-private:
-    Wezel* pierwszy;
-    Wezel* ostatni;
-    
-public:
-    ListaDwukierunkowa() : pierwszy(nullptr), ostatni(nullptr) {}
-    
-    ~ListaDwukierunkowa() {
-        wyczysc();
-    }
 
-    void dodajNaPoczatek(int wartosc) {
-        Wezel* nowyWezel = new Wezel(wartosc);
-        if (!pierwszy) {
-            pierwszy = ostatni = nowyWezel;
-        } else {
-            nowyWezel->nastepny = pierwszy;
-            pierwszy->poprzedni = nowyWezel;
-            pierwszy = nowyWezel;
-        }
-    }
-    
-    void dodajNaKoniec(int wartosc) {
-        Wezel* nowyWezel = new Wezel(wartosc);
-        if (!ostatni) {
-            pierwszy = ostatni = nowyWezel;
-        } else {
-            nowyWezel->poprzedni = ostatni;
-            ostatni->nastepny = nowyWezel;
-            ostatni = nowyWezel;
-        }
-    }
- 
-    void dodajPodIndeksem(int indeks, int wartosc) {
-        if (indeks == 0) {
-            dodajNaPoczatek(wartosc);
-            return;
-        }
-        
-        Wezel* aktualny = pierwszy;
-        int aktualnyIndeks = 0;
-        while (aktualny && aktualnyIndeks < indeks) {
-            aktualny = aktualny->nastepny;
-            aktualnyIndeks++;
-        }
         
         if (!aktualny) {
             dodajNaKoniec(wartosc);
