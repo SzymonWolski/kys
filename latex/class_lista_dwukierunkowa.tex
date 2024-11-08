@@ -1,0 +1,176 @@
+\doxysection{Lista\+Dwukierunkowa Class Reference}
+\label{class_lista_dwukierunkowa}\index{ListaDwukierunkowa@{ListaDwukierunkowa}}
+
+
+Klasa implementująca listę dwukierunkową.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_lista_dwukierunkowa_a5171fe8d7617c75381a2021fc73dfd2d} 
+{\bfseries Lista\+Dwukierunkowa} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny listy dwukierunkowej. \end{DoxyCompactList}\item 
+\label{class_lista_dwukierunkowa_a55ced6c1f79ed8ca34b3f406eeafd547} 
+{\bfseries $\sim$\+Lista\+Dwukierunkowa} ()
+\begin{DoxyCompactList}\small\item\em Destruktor, który usuwa wszystkie elementy listy. \end{DoxyCompactList}\item 
+void \textbf{ dodaj\+Na\+Poczatek} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy element na początek listy. \end{DoxyCompactList}\item 
+void \textbf{ dodaj\+Na\+Koniec} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy element na koniec listy. \end{DoxyCompactList}\item 
+void \textbf{ dodaj\+Pod\+Indeksem} (int indeks, int wartosc)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy element pod określonym indeksem. \end{DoxyCompactList}\item 
+\label{class_lista_dwukierunkowa_a5bfcb0897a5ab20529177642806dc131} 
+void {\bfseries usun\+ZPoczatku} ()
+\begin{DoxyCompactList}\small\item\em Usuwa pierwszy element z listy. \end{DoxyCompactList}\item 
+\label{class_lista_dwukierunkowa_ae16019e77d4e2279eb87c84727e28a9a} 
+void {\bfseries usun\+ZKonca} ()
+\begin{DoxyCompactList}\small\item\em Usuwa ostatni element z listy. \end{DoxyCompactList}\item 
+void \textbf{ usun\+Pod\+Indeksem} (int indeks)
+\begin{DoxyCompactList}\small\item\em Usuwa element znajdujący się pod danym indeksem. \end{DoxyCompactList}\item 
+\label{class_lista_dwukierunkowa_a12d6387f285dadb4ae17fe2e914294c0} 
+void {\bfseries wyswietl} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla zawartość listy od początku do końca. \end{DoxyCompactList}\item 
+\label{class_lista_dwukierunkowa_ad6aeb9f51c17c87dc9109d28e18ce482} 
+void {\bfseries wyswietl\+Od\+Tylu} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla zawartość listy od końca do początku. \end{DoxyCompactList}\item 
+void \textbf{ wyswietl\+Nastepny} (\textbf{ Wezel} $\ast$wezel)
+\begin{DoxyCompactList}\small\item\em Wyświetla wartość następnego elementu dla podanego węzła. \end{DoxyCompactList}\item 
+void \textbf{ wyswietl\+Poprzedni} (\textbf{ Wezel} $\ast$wezel)
+\begin{DoxyCompactList}\small\item\em Wyświetla wartość poprzedniego elementu dla podanego węzła. \end{DoxyCompactList}\item 
+\label{class_lista_dwukierunkowa_aa8dbd2961e855546022ec866f7f975f5} 
+void {\bfseries wyczysc} ()
+\begin{DoxyCompactList}\small\item\em Usuwa wszystkie elementy z listy. \end{DoxyCompactList}\item 
+\textbf{ Wezel} $\ast$ \textbf{ pobierz\+Pierwszy} ()
+\begin{DoxyCompactList}\small\item\em Zwraca wskaźnik do pierwszego elementu listy. \end{DoxyCompactList}\item 
+\textbf{ Wezel} $\ast$ \textbf{ pobierz\+Ostatni} ()
+\begin{DoxyCompactList}\small\item\em Zwraca wskaźnik do ostatniego elementu listy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa implementująca listę dwukierunkową. 
+
+\doxysubsection{Member Function Documentation}
+\index{ListaDwukierunkowa@{ListaDwukierunkowa}!dodajNaKoniec@{dodajNaKoniec}}
+\index{dodajNaKoniec@{dodajNaKoniec}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxysubsubsection{dodajNaKoniec()}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a92899ab4746f2567e9e575157220ddec} 
+void Lista\+Dwukierunkowa\+::dodaj\+Na\+Koniec (\begin{DoxyParamCaption}\item[{int}]{wartosc}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje nowy element na koniec listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & Wartość nowego elementu \\
+\hline
+\end{DoxyParams}
+\index{ListaDwukierunkowa@{ListaDwukierunkowa}!dodajNaPoczatek@{dodajNaPoczatek}}
+\index{dodajNaPoczatek@{dodajNaPoczatek}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxysubsubsection{dodajNaPoczatek()}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a79c478c8903f95788334044383cbb668} 
+void Lista\+Dwukierunkowa\+::dodaj\+Na\+Poczatek (\begin{DoxyParamCaption}\item[{int}]{wartosc}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje nowy element na początek listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & Wartość nowego elementu \\
+\hline
+\end{DoxyParams}
+\index{ListaDwukierunkowa@{ListaDwukierunkowa}!dodajPodIndeksem@{dodajPodIndeksem}}
+\index{dodajPodIndeksem@{dodajPodIndeksem}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxysubsubsection{dodajPodIndeksem()}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_ab562ae8f9490b3ce8e72af8c94dd2540} 
+void Lista\+Dwukierunkowa\+::dodaj\+Pod\+Indeksem (\begin{DoxyParamCaption}\item[{int}]{indeks}{, }\item[{int}]{wartosc}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje nowy element pod określonym indeksem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indeks} & Indeks, pod którym zostanie dodany element \\
+\hline
+{\em wartosc} & Wartość nowego elementu \\
+\hline
+\end{DoxyParams}
+\index{ListaDwukierunkowa@{ListaDwukierunkowa}!pobierzOstatni@{pobierzOstatni}}
+\index{pobierzOstatni@{pobierzOstatni}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxysubsubsection{pobierzOstatni()}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a1d7e50b5c61db8f94c718650b87b1ce8} 
+\textbf{ Wezel} $\ast$ Lista\+Dwukierunkowa\+::pobierz\+Ostatni (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca wskaźnik do ostatniego elementu listy. 
+
+\begin{DoxyReturn}{Returns}
+Wskaźnik do ostatniego węzła 
+\end{DoxyReturn}
+\index{ListaDwukierunkowa@{ListaDwukierunkowa}!pobierzPierwszy@{pobierzPierwszy}}
+\index{pobierzPierwszy@{pobierzPierwszy}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxysubsubsection{pobierzPierwszy()}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a92833b26f0ad751b5d168bb18edc06a3} 
+\textbf{ Wezel} $\ast$ Lista\+Dwukierunkowa\+::pobierz\+Pierwszy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca wskaźnik do pierwszego elementu listy. 
+
+\begin{DoxyReturn}{Returns}
+Wskaźnik do pierwszego węzła 
+\end{DoxyReturn}
+\index{ListaDwukierunkowa@{ListaDwukierunkowa}!usunPodIndeksem@{usunPodIndeksem}}
+\index{usunPodIndeksem@{usunPodIndeksem}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxysubsubsection{usunPodIndeksem()}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a4ffb5d252ddf8bf5e73f7e32f9051657} 
+void Lista\+Dwukierunkowa\+::usun\+Pod\+Indeksem (\begin{DoxyParamCaption}\item[{int}]{indeks}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa element znajdujący się pod danym indeksem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indeks} & Indeks elementu do usunięcia \\
+\hline
+\end{DoxyParams}
+\index{ListaDwukierunkowa@{ListaDwukierunkowa}!wyswietlNastepny@{wyswietlNastepny}}
+\index{wyswietlNastepny@{wyswietlNastepny}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxysubsubsection{wyswietlNastepny()}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a16736bf7f1dce687944cdbd8865ba719} 
+void Lista\+Dwukierunkowa\+::wyswietl\+Nastepny (\begin{DoxyParamCaption}\item[{\textbf{ Wezel} $\ast$}]{wezel}{}\end{DoxyParamCaption})}
+
+
+
+Wyświetla wartość następnego elementu dla podanego węzła. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wezel} & Wskaźnik do węzła, dla którego wyświetlony zostanie następny element \\
+\hline
+\end{DoxyParams}
+\index{ListaDwukierunkowa@{ListaDwukierunkowa}!wyswietlPoprzedni@{wyswietlPoprzedni}}
+\index{wyswietlPoprzedni@{wyswietlPoprzedni}!ListaDwukierunkowa@{ListaDwukierunkowa}}
+\doxysubsubsection{wyswietlPoprzedni()}
+{\footnotesize\ttfamily \label{class_lista_dwukierunkowa_a0e553c79c062784cdf709c28563e21c3} 
+void Lista\+Dwukierunkowa\+::wyswietl\+Poprzedni (\begin{DoxyParamCaption}\item[{\textbf{ Wezel} $\ast$}]{wezel}{}\end{DoxyParamCaption})}
+
+
+
+Wyświetla wartość poprzedniego elementu dla podanego węzła. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wezel} & Wskaźnik do węzła, dla którego wyświetlony zostanie poprzedni element \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Zad1poddoxygen.\+cpp\end{DoxyCompactItemize}
